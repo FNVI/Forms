@@ -15,7 +15,12 @@ class Activity extends Schema{
     public $inputs = [];
     public $repeating;
     
-    public function __construct(string $description,array $inputs = []) {
+    /**
+     * 
+     * @param string $description
+     * @param array $inputs
+     */
+    public function __construct($description,array $inputs = []) {
         $this->description = $description;
         $this->inputs = $inputs;
         parent::__construct("activities");

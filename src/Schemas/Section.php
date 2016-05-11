@@ -1,19 +1,14 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace FNVi\Forms\Schemas;
-use FNVi\Mongo\Schema;
+use FNVi\Mongo\Document;
+
 /**
- * Description of Section
+ * Represents a section on a Form
  *
  * @author Joe Wheatley <joew@fnvi.co.uk>
  */
-class Section extends Schema{
+
+class Section extends Document{
     
     public $title = "";
     public $caption;
@@ -21,7 +16,13 @@ class Section extends Schema{
     public $type;
     public $groups;
     
-    public function __construct($title = "", $activities = []) {
+    /**
+     * The constructor optionally sets the title of the section, as well as the activities
+     * 
+     * @param string $title
+     * @param array $activities
+     */
+    public function __construct($title = "", array $activities = []) {
         $this->title = $title;
         $this->activities = $activities;
         parent::__construct();
