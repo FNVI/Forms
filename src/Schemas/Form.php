@@ -1,18 +1,27 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace FNVi\Forms\Schemas;
-
+use FNVi\Mongo\Schema;
 /**
- * Description of Form
+ * Represents a form in the application.
  *
  * @author Joe Wheatley <joew@fnvi.co.uk>
  */
-class Form {
-    //put your code here
+class Form extends Schema{
+    
+    public $sections;
+    public $title;
+    public $discipline;
+    public $name;
+    
+    public function __construct($title, $name) {
+        $this->title = $title;
+        $this->name = $name;
+        parent::__construct();
+    }
+    
+    public function addSection(){
+        
+    }
+    
 }
