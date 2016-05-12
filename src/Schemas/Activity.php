@@ -1,14 +1,14 @@
 <?php
 
 namespace FNVi\Forms\Schemas;
-use FNVi\Mongo\Schema;
+use FNVi\Mongo\Document;
 
 /**
  * Represents an activity document from the database
  *
  * @author Joe Wheatley <joew@fnvi.co.uk>
  */
-class Activity extends Schema{
+class Activity extends Document{
     
     public $description = "";
     public $service = [];
@@ -20,10 +20,10 @@ class Activity extends Schema{
      * @param string $description
      * @param array $inputs
      */
-    public function __construct($description,array $inputs = []) {
+    public function __construct($description, array $inputs = []) {
         $this->description = $description;
         $this->inputs = $inputs;
-        parent::__construct("activities");
+        parent::__construct();
     }
     
 }
