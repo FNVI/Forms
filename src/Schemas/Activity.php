@@ -15,6 +15,7 @@ class Activity extends Document{
     public $inputs = [];
     public $repeating;
     public $minutes = 1;
+    public $groups;
     
     /**
      * 

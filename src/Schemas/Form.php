@@ -20,7 +20,7 @@ class Form extends Schema{
     public $peopleRquired = 1;
     public $signaturesRequired;
     public $minutes;
-    public $group;
+    public $groups;
     
     public function __construct($title, $name) {
         $this->title = $title;
