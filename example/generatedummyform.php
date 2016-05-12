@@ -5,7 +5,6 @@ use FNVi\Forms\Schemas\Form;
 use FNVi\Forms\Collections\Forms;
 use FNVi\Forms\Schemas\Section;
 use FNVi\Forms\Schemas\Activity;
-use FNVi\Forms\Collections\Activities;
 
 $args = [
     "name"=>FILTER_SANITIZE_STRING,
@@ -18,7 +17,6 @@ $args = [
 $post_vars = filter_input_array(INPUT_POST, $args);
 
 
-$activityCollection = new Activities();
 $formCollection = new Forms();
 $formCount = $formCollection->count([]) + 1;
 $form = new Form($post_vars["name"], $post_vars["title"]);

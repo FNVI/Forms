@@ -1,6 +1,6 @@
 <?php
 namespace FNVi\Forms\Schemas;
-use FNVi\Mongo\Document;
+use FNVi\Mongo\SubDocument;
 
 /**
  * Represents a section on a Form
@@ -8,7 +8,7 @@ use FNVi\Mongo\Document;
  * @author Joe Wheatley <joew@fnvi.co.uk>
  */
 
-class Section extends Document{
+class Section extends SubDocument{
     
     public $title = "";
     public $caption;

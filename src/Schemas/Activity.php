@@ -1,14 +1,14 @@
 <?php
 
 namespace FNVi\Forms\Schemas;
-use FNVi\Mongo\Document;
+use FNVi\Mongo\SubDocument;
 
 /**
  * Represents an activity document from the database
  *
  * @author Joe Wheatley <joew@fnvi.co.uk>
  */
-class Activity extends Document{
+class Activity extends SubDocument{
     
     public $description = "";
     public $service = [];

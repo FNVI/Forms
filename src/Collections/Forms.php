@@ -14,5 +14,5 @@ use FNVi\Mongo\Collection;
  * @author Joe Wheatley <joew@fnvi.co.uk>
  */
 class Forms extends Collection{
-    //put your code here
+    
 }
