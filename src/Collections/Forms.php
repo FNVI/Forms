@@ -7,12 +7,12 @@
  */
 
 namespace FNVi\Forms\Collections;
-
+use FNVi\Mongo\Collection;
 /**
  * Description of Forms
  *
  * @author Joe Wheatley <joew@fnvi.co.uk>
  */
-class Forms {
+class Forms extends Collection{
     //put your code here
 }
