@@ -13,12 +13,14 @@ class Form extends Schema{
     
     public $sections;
     public $title;
-    public $discipline;
     public $name;
     public $revision;
     public $created;
     public $author;
-    
+    public $peopleRquired = 1;
+    public $signaturesRequired;
+    public $minutes;
+    public $group;
     
     public function __construct($title, $name) {
         $this->title = $title;
