@@ -25,7 +25,6 @@ class Activity extends SubDocument{
     public function __construct($description, array $inputs = []) {
         $this->description = $description;
         $this->inputs = $inputs;
-        parent::__construct();
     }
     
 }

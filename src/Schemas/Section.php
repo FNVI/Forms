@@ -25,7 +25,6 @@ class Section extends SubDocument{
     public function __construct($title = "", array $activities = []) {
         $this->title = $title;
         $this->activities = $activities;
-        parent::__construct();
     }
     
 }
